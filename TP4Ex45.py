@@ -17,4 +17,4 @@ grade_average = s.mean(student_and_grades.values())
 print(grade_average)
 
 for student, grade in student_and_grades.items():
-    print(grade)
+    print(grade, student)
