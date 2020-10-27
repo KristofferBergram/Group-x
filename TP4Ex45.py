@@ -1,6 +1,6 @@
 import statistics as s
-student_and_grade = {"Martina": 5.35, "Bastien": 5.07, "Claire": 3.53, "Anna":
-                    4.09, "Maria": 4.55, "Kim": 3.98,"Robin": 3.87, "Adriana": 5.20, "Kristina":
+student_and = {"Martina": 5.35, "Bastien": 5.07, "Claire": 3.53, "Anna":
+                   4.09, "Maria": 4.55, "Kim": 3.98,"Robin": 3.87, "Adriana": 5.20, "Kristina":
                     5.33, "Michael": 4.52, "Sophie": 4.54, "Sara": 4.94,"Olof": 4.61, "Tina": 5.74,
                     "Hanna": 4.42, "Mirsa": 5.55, "Sanna": 4.99, "Sally": 4.34,"Urban": 4.11,
                     "Kelly": 5.14, "Helmer": 4.53, "Joanna": 4.69, "Josephine": 4.00, "Vilma": 5.19,
@@ -11,7 +11,7 @@ student_and_grade = {"Martina": 5.35, "Bastien": 5.07, "Claire": 3.53, "Anna":
                     "Joan": 4.69, "Joseph": 4.00, "Vilmer": 5.19}
 
 
-print(student_and_grade)
+print(student_and)
 
-grade_average = s.mean(student_and_grade.values())
+grade_average = s.mean(student_and.values())
 print(grade_average)
