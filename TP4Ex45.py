@@ -9,3 +9,9 @@ student_and_grade = {"Martina": 5.35, "Bastien": 5.07, "Claire": 3.53, "Anna":
                     "Sophia": 4.54, "Sarah": 4.94,"Olaf": 4.61, "Tino": 5.74, "Hanne": 4.42, "Mirso":
                     3.55, "Sannah": 4.99, "Sallie": 4.34,"Urbi": 4.11, "Kellian": 5.14, "Helmut": 4.53,
                     "Joan": 4.69, "Joseph": 4.00, "Vilmer": 5.19}
+
+
+print(student_and_grade)
+
+grade_average = s.mean(student_and_grade.values())
+print(grade_average)
