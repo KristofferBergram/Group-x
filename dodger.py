@@ -57,6 +57,7 @@ pygame.mixer.music.load('background.mid')
 playerImage = pygame.image.load('player.png')
 playerRect = playerImage.get_rect()
 baddieImage = pygame.image.load('cherry_baddie.png')
+projectileImage = pygame.image.load("missile.png")
 
 # Show the "Start" screen.
 windowSurface.fill(BACKGROUNDCOLOR)
@@ -64,6 +65,8 @@ drawText('Dodger', font, windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3))
 drawText('Press a key to start.', font, windowSurface, (WINDOWWIDTH / 3) - 30, (WINDOWHEIGHT / 3) + 50)
 pygame.display.update()
 waitForPlayerToPressKey()
+
+
 
 topScore = 0
 while True:
@@ -147,6 +150,7 @@ while True:
             playerRect.move_ip(0, -1 * PLAYERMOVERATE)
         if moveDown and playerRect.bottom < WINDOWHEIGHT:
             playerRect.move_ip(0, PLAYERMOVERATE)
+
 
         # Move the baddies down.
         for b in baddies:
